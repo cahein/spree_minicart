@@ -14,6 +14,10 @@
             <span class="out-of-stock">
               <%= Spree.t(:out_of_stock) %>
             </span>
+        <% elsif !line_item.product.available_on.present? %>
+            <span class="out-of-stock">
+              <%= Spree.t(:unavailable) %>
+            </span>
         <% end %>
       </div>
       <div class="minicart-item-delete" data-hook="minicart_item_delete">

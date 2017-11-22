@@ -2,4 +2,5 @@ gl:
   spree:
     view_shopping_cart: "Ver cesta"
     exceeds_available_stock: "Superar a cantidade dispoñible en stock, por favor, poñerse en outra cantidade."
+    unavailable: Non está dispoñible
   your_bag: "Súa cesta"
