@@ -1,4 +1,6 @@
 en:
   spree:
     view_shopping_cart: "See Cart"
-    incl_vat_plus_shipping: (incl. VAT, plus shipping)
+    exceeds_available_stock: "Exceeds available stock, please enter another quantity."
+    unavailable: Not available
+  your_bag: "Your Cart"
