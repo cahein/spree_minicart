@@ -4,7 +4,7 @@
   <% if variant.images.length == 0 %>
     <%= link_to mini_image(variant.product), product_path %>
   <% else %>
-    <%= link_to image_tag(variant.images.first.attachment.url(:mini)), product_path %>
+    <%= link_to image_tag(main_app.url_for(variant.images.first.url(:mini))), product_path %>
   <% end %>
 
   <%= "#{line_item.quantity}" %> x
@@ -20,7 +20,7 @@
     </div>
 
     <div data-hook="minicart_item_delete">
-      <%= link_to image_tag('icons/delete.png'), '#', :class => 'minicart_remove', :id => "delete_#{dom_id(line_item)}" %>
+      <%= link_to '<span class="glyphicon glyphicon-minus-sign"></span>'.html_safe, '#', :class => 'minicart_remove', :id => "delete_#{dom_id(line_item)}" %>
     </div>
   </div>
 
