@@ -25,17 +25,9 @@ feature "minicart", :js => true do
       page.should have_content("ror mug")
       page.should have_content("$30")
       within "div.minicart-actions" do
-        page.find('a.minicart_remove img').click
+        page.find('a.minicart_remove span').click
       end
     end
-
-
-    # problem with Selenium::WebDriver::Error::StaleElementReferenceError
-    # within("#minicart") do
-    #   page.should have_content("cart is empty")
-    #   page.should_not have_content("ror mug")
-    #   page.should_not have_content("$30")
-    # end
   end
 
   scenario "delete a line item with multiple quantity should totally remove from minicart" do
@@ -64,7 +56,7 @@ feature "minicart", :js => true do
 
     page.execute_script 'jQuery("#minicart").trigger("mouseenter")'
     within "div.minicart-actions" do
-      find('a.minicart_remove img').click
+      find('a.minicart_remove span').click
     end
   end
 

@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "Spree Minicart allows customer to preview their cart without leaving the page they're on. This is a fork from https://github.com/sbounmy/spree_minicart by Stéphane Bounmy."
   s.required_ruby_version = '>= 2.3.3'
 
-  s.author            = 'Stéphane BounmyC'
+  s.author            = 'Stéphane Bounmy'
   s.email             = 'stephanebounmy@gmail.com'
   s.homepage          = 'https://github.com/sbounmy/spree_minicart'
 
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'spree_auth_devise', '~>3.4.0'
 
   s.add_development_dependency 'capybara'
+  s.add_development_dependency 'puma'
   s.add_development_dependency 'factory_bot_rails'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'sass-rails', '~> 5.0'

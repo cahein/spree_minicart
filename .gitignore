@@ -4,6 +4,7 @@
 .DS_Store
 .idea
 .project
+.tern-port
 tmp
 nbproject
 *.swp
